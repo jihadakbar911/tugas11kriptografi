@@ -51,7 +51,7 @@ function App() {
           <div style={{ marginTop: '2rem' }}>
             <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
               <button className="btn btn-secondary" onClick={handleReset}>
-                🔄 Clear / Reset Hasil
+                Clear / Reset Hasil
               </button>
             </div>
 
@@ -64,7 +64,7 @@ function App() {
 
             <div className="glass-panel animate-fade-in" style={{ marginTop: '2rem', animationDelay: '0.4s', border: '1px solid var(--accent-color)' }}>
               <h3 style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{ fontSize: '1.5rem' }}>🏁</span> Hasil Akhir ({simulationResult.mode === 'encrypt' ? 'Ciphertext' : 'Plaintext'})
+                Hasil Akhir ({simulationResult.mode === 'encrypt' ? 'Ciphertext' : 'Plaintext'})
               </h3>
               
               <div className="grid-2">

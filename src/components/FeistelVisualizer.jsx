@@ -134,7 +134,7 @@ export default function FeistelVisualizer({ ip, rounds }) {
   return (
     <div className="glass-panel animate-fade-in" style={{ marginTop: '2rem', animationDelay: '0.3s' }}>
       <h3 style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <span style={{ fontSize: '1.5rem' }}>🔄</span> Proses Feistel (16 Putaran)
+        Proses Feistel (16 Putaran)
       </h3>
       
       <div className="info-box">

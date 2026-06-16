@@ -1,17 +1,18 @@
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-glass: rgba(20, 20, 30, 0.6);
+  --bg-primary: #0f111a;
+  --bg-secondary: #161824;
+  --bg-glass: rgba(22, 24, 36, 0.55);
   --border-glass: rgba(255, 255, 255, 0.08);
-  --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-accent: #00e5ff;
-  --text-accent-dim: #00e5ff88;
-  --accent-color: #00e5ff;
-  --accent-glow: 0 0 20px rgba(0, 229, 255, 0.3);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-accent: #38bdf8;
+  --text-accent-dim: rgba(56, 189, 248, 0.5);
+  --accent-color: #38bdf8;
+  --accent-glow: 0 0 25px rgba(56, 189, 248, 0.4);
+  --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
   
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, monospace;
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', ui-monospace, monospace;
 }
 
 * {
@@ -27,8 +28,9 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(0, 229, 255, 0.05), transparent 25%),
-    radial-gradient(circle at 85% 30%, rgba(138, 43, 226, 0.05), transparent 25%);
+    radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.12), transparent 40%),
+    radial-gradient(circle at 85% 100%, rgba(129, 140, 248, 0.12), transparent 40%),
+    radial-gradient(circle at 50% 50%, #0f111a 0%, #08090d 100%);
   background-attachment: fixed;
 }
 
@@ -144,15 +146,16 @@ h1 {
 }
 
 .btn-primary {
-  background: var(--accent-color);
-  color: #000;
-  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
+  background: var(--accent-gradient);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--accent-glow);
-  background: #33ebff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.5);
+  background: linear-gradient(135deg, #7dd3fc 0%, #a5b4fc 100%);
 }
 
 .btn-secondary {

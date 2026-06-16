@@ -18,7 +18,7 @@ export default function KeyScheduleVisualizer({ log }) {
   return (
     <div className="glass-panel animate-fade-in" style={{ marginTop: '2rem', animationDelay: '0.2s' }}>
       <h3 style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <span style={{ fontSize: '1.5rem' }}>🔑</span> Pembangkitan Subkunci (Key Schedule)
+        Pembangkitan Subkunci (Key Schedule)
       </h3>
       
       <div className="info-box">

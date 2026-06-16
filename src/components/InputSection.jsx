@@ -112,7 +112,7 @@ export default function InputSection({ onSimulate }) {
 
           <div className="form-group" style={{ marginTop: '2rem' }}>
             <button className="btn btn-primary" style={{ width: '100%' }} onClick={handleSimulate}>
-              {mode === 'encrypt' ? '⚡ Jalankan Enkripsi' : '🔓 Jalankan Dekripsi'}
+              {mode === 'encrypt' ? 'Jalankan Enkripsi' : 'Jalankan Dekripsi'}
             </button>
           </div>
         </div>
